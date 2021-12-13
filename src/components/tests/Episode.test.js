@@ -40,7 +40,7 @@ test("renders the summary test passed as prop", () => {
 test("renders default image when image is not defined", () => {
     render(<Episode episode={testEpisodeNullImage} />);
 
-    // const image = screen.getByAltText('stranger-things');
+    const image = screen.getByAltText('https://i.ibb.co/2FsfXqM/stranger-things.png');
 
-    // expect(image).toBeInTheDocument();
+    expect(image).toBeInTheDocument();
 });
